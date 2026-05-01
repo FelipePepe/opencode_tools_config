@@ -1,0 +1,45 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "engram": {
+      "command": [
+        "/home/sandman/.local/bin/engram",
+        "mcp",
+        "--tools=agent"
+      ],
+      "enabled": true,
+      "type": "local"
+    }
+  },
+  "skills": {
+    "paths": [
+      "/home/sandman/.copilot/skills",
+      "/home/sandman/Sources/skills-hub/skills/copilot-only"
+    ]
+  },
+  "model": "ollama-local/qwen-coding",
+  "small_model": "ollama-local/qwen-coding",
+  "provider": {
+    "ollama-local": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (spark.casa)",
+      "options": {
+        "baseURL": "http://spark.casa:11434/v1"
+      },
+      "models": {
+        "qwen-coding": {
+          "id": "qwen3.6:27b",
+          "name": "Qwen 3.6 27B (Coding)"
+        },
+        "gemma-vision": {
+          "id": "gemma4:31b",
+          "name": "Gemma 4 31B (Vision)"
+        },
+        "qwen-uncensored": {
+          "id": "fredrezones55/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive:latest",
+          "name": "Qwen 3.6 35B-A3B MoE (Uncensored)"
+        }
+      }
+    }
+  }
+}
