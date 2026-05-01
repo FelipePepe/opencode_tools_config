@@ -1,0 +1,8 @@
+{
+  "name": "opencode-tools-config",
+  "private": true,
+  "description": "OpenCode configuration and custom tools for Ollama-backed local coding models.",
+  "dependencies": {
+    "@opencode-ai/plugin": "1.14.29"
+  }
+}
